@@ -12,6 +12,7 @@
                #:weblocks-ui
                #:weblocks-ui/form
                #:websocket-driver
-               #:weblocks-websocket)
+               #:weblocks-websocket
+               #:lparallel)
   :components ((:file "package")
                (:file "websock-demo")))
