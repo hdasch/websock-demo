@@ -67,7 +67,8 @@
              (incf (counter (box  widget)))
              (lparallel.queue:push-queue
               (weblocks/widgets/dom:dom-id widget)
-              (queue *page*)))
+              (queue *page*))
+             (weblocks/response:make-response "" :code 200))
          "Count up!"))))
 
 (defmethod initialize-instance ((instance page) &rest restargs)
